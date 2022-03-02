@@ -1,29 +1,25 @@
 import java.io.*;
 import java.util.*;
 
-public class Celsius{
-  public static void main(String[] args){
+public class Celsius
+{
+  public static void main(String[] args)
+  {
+    Scanner in = new Scanner(System.in);
+    double Celsius;
+    double Fahrenheit;
 
-Scanner in = new Scanner(System.in);
+    //prompts user to input celsius 
+    System.out.println("What's the Celsius temperature you would      like to convert?");
 
-double Celsius;
-double Fahrenheit;
-
-//prompts user to input celsius 
-System.out.println("What's the Celsius temperature you would like to convert?");
-
-//initializes Celsius
-Celsius = in.nextDouble();
-
-
-//initializes Fahrenheit by converting from Celsius
-Fahrenheit = Celsius * (9.0/5.0) + 32;
-
-System.out.printf("%.1f C = %.1f F\n", Celsius, Fahrenheit);
+    //initializes Celsius
+    Celsius = in.nextDouble();
 
 
+    //initializes Fahrenheit by converting from Celsius
+    Fahrenheit = Celsius * (9.0/5.0) + 32;
 
-
+    System.out.printf("%.1f C = %.1f F\n", Celsius, Fahrenheit);
   }
 }
 

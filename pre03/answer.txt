@@ -22,7 +22,7 @@ ping()
 3) What happens if you invoke baffle(); at the end of the ping method? (We will see why in the next chapter.)
 
 Answer:
-An error will occur.
+An error will occur. Infinite loop?
 
 
 

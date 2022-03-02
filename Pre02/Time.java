@@ -3,8 +3,8 @@ import java.util.*;
 
 public class Time{
 
-  public static void main(String[] args){
-
+  public static void main(String[] args)
+  {
     double hour;
     double minute;
     double second;
@@ -14,34 +14,31 @@ public class Time{
     final double SECONDS_IN_HOUR = 3600.0;
     final double SECONDS_IN_MINUTE = 60.0;
     double percentOfDayThatPassed;
-    
-
+  
     hour = 15.0;
     minute = 18.0;
     second = 22.0;
   
     
-    
-
     /*the code below calculates and initializes the seconds since midnight */
-    secondsSinceMidnight = (hour * SECONDS_IN_HOUR) + (minute * SECONDS_IN_MINUTE) + second;
+    secondsSinceMidnight = (hour * SECONDS_IN_HOUR) + (minute *         SECONDS_IN_MINUTE) + second;
     
     /*the code below calculates and initializes the seconds left in the day
     */
     secondsRemaining = SECONDS_IN_A_DAY - secondsSinceMidnight;
 
     /*the code below calculates and intializes the percent of day that passed*/
-    percentOfDayThatPassed = secondsSinceMidnight / SECONDS_IN_A_DAY;
+    percentOfDayThatPassed = secondsSinceMidnight /                    SECONDS_IN_A_DAY;
 
 
     //the code below prints the seconds since midnight
-    System.out.printf("%.0f seconds have elapsed since midnight.\n", secondsSinceMidnight);
+    System.out.printf("%.0f seconds have elapsed since                  midnight.\n", secondsSinceMidnight);
 
     //the code below prints the seconds remaining in the day
-    System.out.printf("There are %.0f seconds remaining in the day.\n", secondsRemaining);
+    System.out.printf("There are %.0f seconds remaining in the         day.\n", secondsRemaining);
 
     //the code below prints the percentage of the day that has passed.
-    System.out.printf("%.2f of the day has passed\n", percentOfDayThatPassed);
+    System.out.printf("%.2f of the day has passed\n",                  percentOfDayThatPassed);
 
     /*The code below changes the value of h, m, s, to reflect current time*/
     hour = 15.0;
@@ -49,14 +46,10 @@ public class Time{
     second = 24.0;
 
     //initializes current time to seconds
-    double currentTimeInSeconds = (hour * SECONDS_IN_HOUR) + (minute * SECONDS_IN_MINUTE) + 24;
+    double currentTimeInSeconds = (hour * SECONDS_IN_HOUR) +           (minute * SECONDS_IN_MINUTE) + 24;
 
     /*Current time in seconds - secondsSinceMidnight = time that has elapsed since starting the exercise */
-    System.out.println(currentTimeInSeconds - secondsSinceMidnight);
-
-    
-
-    
+    System.out.println(currentTimeInSeconds -                          secondsSinceMidnight);    
   }
 }
 
