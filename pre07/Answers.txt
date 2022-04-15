@@ -1,0 +1,52 @@
+**For each variable, identify the role it plays.
+
+1)**************************************************************
+
+public static int banana(int[] a) {
+    int kiwi = 1;
+    int i = 0;
+    while (i < a.length) {
+        kiwi = kiwi * a[i];
+        i++;
+    }
+    return kiwi;
+}
+
+Answer:
+The method returns the product of all the integers in array a.
+
+int[] a is the array that the method will multiply
+kiwi is the accumulator
+i is the allows the loop to start at index 0 of array a
+
+2)***************************************************************
+
+public static int grapefruit(int[] a, int grape) {
+    for (int i = 0; i < a.length; i++) {
+        if (a[i] == grape) {
+            return i;
+        }
+    }
+    return -1;
+}
+
+Answer:
+The method returns the index of the first element in array a that matches the variable grape. if there are no matches, it will return -1.
+
+int[] a = the array that the method will traverse
+grape = variable that will be referenced for the traversal
+i = is the initializer for the for loop and is used to iterate the for loop
+
+3) **************************************************************
+
+public static int pineapple(int[] a, int apple) {
+    int pear = 0;
+    for (int pine: a) {
+        if (pine == apple) {
+            pear++;
+        }
+    }
+    return pear;
+}
+
+Answer:
