@@ -11,7 +11,10 @@ public class Sieve
     boolean array[] = new boolean[n];
     
         for (int i = 2; i <= limit; i++)
+          {
             array[i] = true;
+          }
+            
       //set all numbers above 2 to true
     
  
